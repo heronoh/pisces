@@ -3,4 +3,4 @@
 *site_media/
 *.Rproj.user/
 /.Rproj.user/
-.Rproj.user/
+.Rproj.user/*
