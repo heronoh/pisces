@@ -1,13 +1,4 @@
----
-title: "PISCES - Biomonitoring Solutions"
-author: "PISCES Team"
-format: 
-  html:
-    theme: flatly
-    toc: true
-    toc-location: left
-editor: visual
----
+
 
 # Team
 

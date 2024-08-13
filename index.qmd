@@ -1,16 +1,11 @@
 ---
 title: "PISCES - Soluções de Biomonitoramento"
 author: "PISCES Team"
-format: 
-  html:
-    theme: flatly
-    toc: true
-    toc-location: left
-editor: visual
 ---
 
 # PISCES - Soluções de Biomonitoramento
 
+Olá!
 Welcome to PISCES, where we specialize in biomonitoring vertebrate and invertebrate communities in impacted ecosystems. Our solutions use cutting-edge eDNA metabarcoding technology to assess and monitor biodiversity with precision and efficiency.
 
 Navigate through our website to learn more about our services, view our portfolio of past projects, and meet our dedicated team of experts.

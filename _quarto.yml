@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+format:
+  html:
+    theme: solar
+    toc: true
+    toc-location: left
+editor: visual
 
 website:
   title: "PISCES"

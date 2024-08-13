@@ -1,13 +1,3 @@
----
-title: "PISCES - Biomonitoring Solutions"
-author: "PISCES Team"
-format: 
-  html:
-    theme: flatly
-    toc: true
-    toc-location: left
-editor: visual
----
 
 # Contextualization
 
@@ -17,9 +7,9 @@ Environmental DNA (eDNA) metabarcoding is a revolutionary approach to biodiversi
 
 ### Applications
 
-- **Biodiversity Assessment**: Identify species in terrestrial, aquatic, and marine environments.
-- **Impact Monitoring**: Monitor the effects of environmental changes, pollution, and habitat destruction.
-- **Conservation Planning**: Inform conservation strategies by assessing species presence and population dynamics.
-- **Invasive Species Detection**: Early detection of invasive species to prevent ecological damage.
+-   **Biodiversity Assessment**: Identify species in terrestrial, aquatic, and marine environments.
+-   **Impact Monitoring**: Monitor the effects of environmental changes, pollution, and habitat destruction.
+-   **Conservation Planning**: Inform conservation strategies by assessing species presence and population dynamics.
+-   **Invasive Species Detection**: Early detection of invasive species to prevent ecological damage.
 
 Our technology provides accurate, reliable, and non-invasive monitoring, making it a valuable tool for environmental management and conservation efforts.
