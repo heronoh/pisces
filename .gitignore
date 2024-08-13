@@ -1,6 +1,5 @@
 /.quarto/
 /site_media/*
-/_site/
 *.Rproj.user/
 /.Rproj.user/
 .Rproj.user/*
