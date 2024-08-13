@@ -1,0 +1,29 @@
+---
+title: "PISCES - Biomonitoring Solutions"
+author: "PISCES Team"
+format: 
+  html:
+    theme: flatly
+    toc: true
+    toc-location: left
+editor: visual
+---
+
+# Team
+
+## Meet Our Experts
+
+### Dr. Alex Riverstone
+**Position**: Senior Biologist  
+**Expertise**: Vertebrate Ecology, Conservation Biology  
+**Background**: Dr. Riverstone has over 15 years of experience in conservation biology, with a focus on vertebrate species in both terrestrial and aquatic environments. His work has been pivotal in developing eDNA techniques for monitoring endangered species.
+
+### Dr. Casey Waverly
+**Position**: Invertebrate Specialist  
+**Expertise**: Invertebrate Ecology, Biodiversity Monitoring  
+**Background**: Dr. Waverly's research focuses on the use of eDNA for invertebrate monitoring. She has worked extensively on projects assessing the impact of environmental change on invertebrate communities.
+
+### Dr. Morgan Lakewood
+**Position**: Environmental DNA Analyst  
+**Expertise**: Molecular Ecology, eDNA Metabarcoding  
+**Background**: Dr. Lakewood is an expert in eDNA metabarcoding and has developed novel methods for analyzing complex environmental samples. Their work has significantly advanced the field of molecular ecology.

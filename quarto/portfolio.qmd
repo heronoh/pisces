@@ -1,0 +1,31 @@
+---
+title: "PISCES - Biomonitoring Solutions"
+author: "PISCES Team"
+format: 
+  html:
+    theme: flatly
+    toc: true
+    toc-location: left
+editor: visual
+---
+
+# Portfolio
+
+## Our Past Projects
+
+Explore some of the impactful projects we've conducted in various ecosystems. These examples demonstrate our expertise and the value of our eDNA metabarcoding services.
+
+### Mock Project 1: Monitoring Aquatic Biodiversity in Coastal Wetlands
+- **Location**: Gulf Coast Wetlands
+- **Objective**: Assessing the impact of agricultural runoff on aquatic biodiversity.
+- **Outcome**: Identified significant shifts in species composition, leading to improved water management practices.
+
+### Mock Project 2: Invasive Species Detection in Freshwater Lakes
+- **Location**: Great Lakes Region
+- **Objective**: Early detection of invasive species to prevent ecosystem disruption.
+- **Outcome**: Detected invasive zebra mussels at an early stage, enabling prompt mitigation measures.
+
+### Mock Project 3: Biodiversity Assessment in Urban Green Spaces
+- **Location**: Urban Parklands, City X
+- **Objective**: Evaluating the effectiveness of urban rewilding initiatives.
+- **Outcome**: Documented increased biodiversity, supporting the continuation of rewilding projects.
