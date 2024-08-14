@@ -1,0 +1,7 @@
+\# Lessons
+
+Welcome to our lessons section. Below are links to the various lessons available:
+
+[-]{.underline} \[Lesson 1: Introduction to eDNA\](aulas/aulas_bash/Pratica_1-Bioinfo.Rmd)
+[-]{.underline} \[Lesson 2: Advanced Techniques in Metabarcoding\](aulas/aulas_bash/Pratica_2-Bioinfo.Rmd)
+[-]{.underline} \[Lesson 3: Case Studies in Ecosystem Monitoring\](aulas/aulas_bash/Pratica_3-Bioinfo.Rmd)
