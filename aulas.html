@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Prof.&nbsp;Heron OH">
-<meta name="dcterms.date" content="2023-01-01">
 
-<title>Dicionário de comandos em bash – PISCES</title>
+<title>aulas – PISCES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">PISCES</span>
     </a>
   </div>
@@ -90,20 +88,24 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contextualization.html"> 
+    <a class="nav-link" href="./contextualization.html"> 
 <span class="menu-text">Contextualization</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html"> 
+    <a class="nav-link" href="./portfolio.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../team.html"> 
+    <a class="nav-link" href="./team.html"> 
 <span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./aulas.html" aria-current="page"> 
+<span class="menu-text">Aulas</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -116,16 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#práticas-em-bioinfo" id="toc-práticas-em-bioinfo" class="nav-link active" data-scroll-target="#práticas-em-bioinfo">Práticas em Bioinfo</a>
-  <ul class="collapse">
-  <li><a href="#dicionário-de-comandos-em-bash" id="toc-dicionário-de-comandos-em-bash" class="nav-link" data-scroll-target="#dicionário-de-comandos-em-bash">Dicionário de comandos em <em>bash</em></a></li>
-  </ul></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -134,205 +127,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Dicionário de comandos em <em>bash</em></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Prof.&nbsp;Heron OH </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
+<p># Lessons</p>
+<p>Welcome to our lessons section. Below are links to the various lessons available:</p>
+<p><u>-</u> [Lesson 1: Introduction to eDNA](aulas/aulas_bash/Pratica_1-Bioinfo.Rmd) <u>-</u> [Lesson 2: Advanced Techniques in Metabarcoding](aulas/aulas_bash/Pratica_2-Bioinfo.Rmd) <u>-</u> [Lesson 3: Case Studies in Ecosystem Monitoring](aulas/aulas_bash/Pratica_3-Bioinfo.Rmd)</p>
 
 
-</header>
-
-
-<style type="text/css" scoped="">
-PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
-</style>
-<style>
-body {
-text-align: justify}
-</style>
-<style>
-#toc ul.nav li ul li {
-    display: none;
-    max-height: none;
-}
-
-#toc ul.nav li.active ul li  {
-    display: block;
-    max-height: none;
-}
-
-#toc ul.nav li ul li ul li {
-    max-height: none;
-    display: none !important;
-}
-
-#toc ul.nav li ul li.active ul li {
-    max-height: none;
-    display: block !important;
-}
-</style>
-<section id="práticas-em-bioinfo" class="level1">
-<h1>Práticas em Bioinfo</h1>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Olá, esta é mais uma de um conjunto de práticas em bioinformática desenvolvidas para o curso de Biomedicina da PUC MG. Você pode encontrar as demais práticas <a href="https://heronoh.github.io/bioinfo"><em>aqui</em></a>.</p>
-<section id="dicionário-de-comandos-em-bash" class="level2">
-<h2 class="anchored" data-anchor-id="dicionário-de-comandos-em-bash">Dicionário de comandos em <em>bash</em></h2>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Comando</th>
-<th style="text-align: left;">Ação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>ls</em></strong></td>
-<td style="text-align: left;">lista o conteúdo do diretório atual</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>cd</em></strong></td>
-<td style="text-align: left;">muda o diretório atual</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>pwd</em></strong></td>
-<td style="text-align: left;">exibe o caminho completo do diretório atual</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>mkdir</em></strong></td>
-<td style="text-align: left;">cria um novo diretório</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>rm</em></strong></td>
-<td style="text-align: left;">remove um arquivo ou diretório</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>cp</em></strong></td>
-<td style="text-align: left;">copia um arquivo ou diretório</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>mv</em></strong></td>
-<td style="text-align: left;">move ou renomeia um arquivo ou diretório</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>cat</em></strong></td>
-<td style="text-align: left;">exibe o conteúdo de um arquivo</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>less</em></strong></td>
-<td style="text-align: left;">exibe o conteúdo de um arquivo de forma interativa</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>grep</em></strong></td>
-<td style="text-align: left;">procura por um padrão em um arquivo ou em uma saída de comando</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>passwd</em></strong></td>
-<td style="text-align: left;">muda seu <em>password</em></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>top</em></strong></td>
-<td style="text-align: left;">exibe as informações de uso do sistema em tempo real</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>htop</em></strong></td>
-<td style="text-align: left;">exibe as informações de uso do sistema em tempo real, com mais opções</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>ps</em></strong></td>
-<td style="text-align: left;">lista os processos em execução no sistema</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>kill</em></strong></td>
-<td style="text-align: left;">encerra um processo em execução</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>chmod</em></strong></td>
-<td style="text-align: left;">altera as permissões de acesso a um arquivo ou diretório</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>chown</em></strong></td>
-<td style="text-align: left;">altera o proprietário de um arquivo ou diretório</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>ssh</em></strong></td>
-<td style="text-align: left;">estabelece uma conexão segura com outro computador</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>tar</em></strong></td>
-<td style="text-align: left;">cria ou extrai arquivos compactados em formato tar</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>wget</em></strong></td>
-<td style="text-align: left;">baixa arquivos da internet</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>curl</em></strong></td>
-<td style="text-align: left;">transfere dados de ou para um servidor utilizando diversos protocolos</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>sudo</em></strong></td>
-<td style="text-align: left;">executa um comando com privilégios de superusuário (root)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>apt</em></strong></td>
-<td style="text-align: left;">gerenciador de pacotes do sistema Debian e derivados, utilizado para instalar, atualizar e remover pacotes de software</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>df</em></strong></td>
-<td style="text-align: left;">exibe informações sobre o espaço em disco utilizado e livre em cada partição do sistema</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>du</em></strong></td>
-<td style="text-align: left;">exibe o espaço em disco utilizado por cada arquivo e diretório no sistema</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><em>ping</em></strong></td>
-<td style="text-align: left;">testa a conectividade com outro computador ou dispositivo na rede</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong><em>rsync</em></strong></td>
-<td style="text-align: left;">sincroniza o conteúdo de diretórios e arquivos entre dois computadores ou dispositivos na rede</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<blockquote class="blockquote">
-<p>Voltar para a <a href="https://heronoh.github.io/bioinfo"><em>página inicial</em></a></p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-
-
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

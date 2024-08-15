@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Prof.&nbsp;Heron OH">
+<meta name="dcterms.date" content="2024-08-14">
 
-<title>pratica_1-bioinfo – PISCES</title>
+<title>Práticas em Bioinfo III – PISCES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,14 +158,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#práticas-em-bioinformática" id="toc-práticas-em-bioinformática" class="nav-link active" data-scroll-target="#práticas-em-bioinformática">Práticas em Bioinformática</a>
+  <li><a href="#scripts-bioinformáticos" id="toc-scripts-bioinformáticos" class="nav-link active" data-scroll-target="#scripts-bioinformáticos"><em>Scripts</em> bioinformáticos</a>
   <ul class="collapse">
-  <li><a href="#práticas-em-linha-de-comando---linux" id="toc-práticas-em-linha-de-comando---linux" class="nav-link" data-scroll-target="#práticas-em-linha-de-comando---linux">Práticas em Linha de comando - Linux</a>
-  <ul class="collapse">
-  <li><a href="#prática-i---navegando-em-diretórios" id="toc-prática-i---navegando-em-diretórios" class="nav-link" data-scroll-target="#prática-i---navegando-em-diretórios">Prática I - Navegando em diretórios</a></li>
+  <li><a href="#tradução-o-ribossomo-digital" id="toc-tradução-o-ribossomo-digital" class="nav-link" data-scroll-target="#tradução-o-ribossomo-digital">Tradução: o ribossomo digital</a></li>
   </ul></li>
-  <li><a href="#including-plots" id="toc-including-plots" class="nav-link" data-scroll-target="#including-plots">Including Plots</a></li>
-  </ul></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios">Exercícios</a></li>
   </ul>
 </nav>
 </nav>
@@ -174,33 +173,213 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Práticas em Bioinfo III</h1>
+</div>
 
 
 
-<section id="práticas-em-bioinformática" class="level1">
-<h1>Práticas em Bioinformática</h1>
-<p>Prof.&nbsp;Heron OH 01/2023</p>
-<p>__<span style="color:darkgreen">Bioinformática para Biomedicina - 2023</span>__</p>
-<section id="práticas-em-linha-de-comando---linux" class="level2">
-<h2 class="anchored" data-anchor-id="práticas-em-linha-de-comando---linux">Práticas em Linha de comando - Linux</h2>
-<section id="prática-i---navegando-em-diretórios" class="level3">
-<h3 class="anchored" data-anchor-id="prática-i---navegando-em-diretórios">Prática I - Navegando em diretórios</h3>
-<p>Para se trabalhar na linha de comando, é muito importante saber onde se está. O computador é organizado em diretórios (também chamados de pastas). Todos os diretórios estão contidos dentro de um diretório principal, o <strong>diretório raiz</strong>, representado pelo símbolo <em>barra</em> (<strong>/</strong>). Todos os arquivos ou pastas do computador tem uma localização definida, e portanto, tem <em>endereços</em>. Para a execução de qualquer comando que atua sobre um arquivo deve ser fornecido o seu <em>endereço</em>. Para se evitar a ocorrencia de erros usamos, preferencialmente, <strong><em>endereços completos</em></strong>, ou seja, contendo todas as pastas a partir do diretório raiz, o <strong>/</strong> . Por exemplo:</p>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Heron OH </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 14, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style type="text/css" scoped="">
+PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
+</style>
+<style>
+body {
+text-align: justify}
+</style>
+<style>
+#toc ul.nav li ul li {
+    display: none;
+    max-height: none;
+}
+
+#toc ul.nav li.active ul li  {
+    display: block;
+    max-height: none;
+}
+
+#toc ul.nav li ul li ul li {
+    max-height: none;
+    display: none !important;
+}
+
+#toc ul.nav li ul li.active ul li {
+    max-height: none;
+    display: block !important;
+}
+</style>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Olá, esta é mais uma de um conjunto de práticas em bioinformática desenvolvidas para o curso de Biomedicina da PUC MG. Você pode encontrar as demais práticas <a href="https://heronoh.github.io/bioinfo"><em>aqui</em></a>.</p>
+<section id="scripts-bioinformáticos" class="level2">
+<h2 class="anchored" data-anchor-id="scripts-bioinformáticos"><em>Scripts</em> bioinformáticos</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Na prática passada você aprendeu a construir um <em>script</em> que desempenhava uma função simples, de saudação, utilizando funções/programas (outros <em>scripts</em>) existentes na linguagem <em>bash</em>. Da mesma maneira, é possível utilizar estes funções/programas para resolver os problemas de bioinformática que vimos nos exercícios, como a transformação de sequências de DNA em seu complemento reverso, em RNA, ou até mesmo em proteínas.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; As ferramentas de <em>linha de comando</em> são especialmente eficientes para o processamento de informações de texto e tabelas. Assim, uma vez que a informação genética pode ser bem representada nesses tipos de arquivo, é possível aproveitar todo o poder dessas ferramentas, num contexto biológico.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Mas não é necessário que cada bioinformata faça seus próprios programas. À medida que o universo da bioinfo se desenvolve, as ferramentas mais eficientes e práticas acabam se estabelecendo e se difundindo, de maneira semelhante ao que ocorre no mundo da ciência.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Esta é a grande vantagem da (bio)informática. Por ser baseada (principalmente) em ferramentas de <em>código aberto</em>, qualquer pessoa pode fazer melhorias, reformulações, ou construir novas funções a partir das ferramentas existentes. E não é preciso <strong><em>reinventar a roda!</em></strong> Problemas clássicos, ou recorrentes, tendem a já possuir soluções disponíveis a alguns cliques de distância.</p>
+<section id="tradução-o-ribossomo-digital" class="level3">
+<h3 class="anchored" data-anchor-id="tradução-o-ribossomo-digital">Tradução: o ribossomo digital</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Figura central no funcionamento celular e no fluxo da informação biológica, o <strong>ribossomo</strong> é uma máquina perfeita, modelada pela seleção natural. Como um computador na célula, ele é capaz de decodificar a traduzir a informação contida no <em>RNA mensagiro</em> (mRNA) em uma sequência correspondente de <em>amino ácidos</em>, produzindo as <em>proteínas</em> que desempenham as mais diversas atividades.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Reproduzir um <em>ribossomo</em> no mundo virtual é relativamente simples: basta escrever um <em>script</em> que, para cada trinca de letras de um arquivo <em>.fasta</em> (representando 3 nucleotídeos do <em>DNA/mRNA</em>), identifique uma letra (representando um <em>amino ácido</em>, ou um <em>sinal de parada</em>, correspondentes). Este <em>script</em> precisaria conter um dicionário, com todas as correspondências entre as trincas de nucleotídeos e cada <em>amino ácido</em>, utilizando letras como representações, como o <a href="https://www.bioinformatics.org/sms/iupac.html">código sequências biológicas da <strong>IUPAC</strong></a> (a <em>International Union of Pure and Applied Chemistry</em>).</p>
+<section id="baixando-um-tradutor" class="level4">
+<h4 class="anchored" data-anchor-id="baixando-um-tradutor">Baixando um tradutor</h4>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; A partir de uma busca rápida no <a href="https://www.google.com/"><em>Google</em></a>, com as palavras chave “<strong><em>DNA protein translate command line</em></strong>”, você observará que há muitas opções pacotes e programas. Um programa de tradução de <strong>DNA|proteína</strong> muito utilizado é o <em>transeq</em>, do pacote <a href="http://emboss.open-bio.org/"><strong>EMBOSS</strong></a> (o <em>European Molecular Biology Open Software Suite</em>). Este é um pacote que reúne <a href="https://www.bioinformatics.nl/emboss-explorer/">dezenas de programas</a> para trabalhar com arquivos de sequências e outros arquivos comuns na bioinformática. Ele foi desenvolvido em conjunto, por pesquisadores de diferentes centros de pesquisa como o <a href="https://www.ebi.ac.uk/about"><strong>EMBL-EBI</strong></a>, o <a href="https://www.sanger.ac.uk/"><strong>WSI</strong></a>, o <a href="https://www.ukri.org/councils/bbsrc/"><strong>BBSRC</strong></a> e o <a href="https://www.mrc-bsu.cam.ac.uk/"><strong>MRC</strong></a>. O pacote <strong>EMBOSS</strong> pode ser instalado de maneira semelhante a qualquer aplicativo da distribuição de <em>Linux</em> que estamos usando (<strong>Ubuntu - Debian</strong>), com o <em>sistema de gerenciamento de pacotes</em> <strong>apt</strong>.</p>
 <blockquote class="blockquote">
-<p>Na sua linha de comando ( <em>bash</em> ), escreva o seguinte comando e aperte <strong><em>ENTER</em></strong>.</p>
+<p>Instale o pacote <strong>EMBOSS</strong> utilizando o <em>sistema de gerenciamento de pacotes</em> <strong>apt</strong>.</p>
 </blockquote>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">cars</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install emboss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Após a instalação, verifique que agora você possui a ferramenta/<em>script</em> <em>transeq</em>, e abra seu manual.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">transeq</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="traduzindo-um-arquivo-.fasta" class="level4">
+<h4 class="anchored" data-anchor-id="traduzindo-um-arquivo-.fasta">Traduzindo um arquivo <em>.fasta</em></h4>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Antes de começar, vamos organizar uma pasta para trabalhar com os arquivos desta prática.</p>
+<blockquote class="blockquote">
+<p>Na sua <strong><em>home</em></strong>, crie uma pasta <em>aula3</em> para os arquivos da prática de hoje. Entre nesta pasta.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> aula3</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> aula3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Agora, vamos criar o arquivo que utilizaremos. Vamos trabalhar com a sequência do gene <a href="https://en.wikipedia.org/wiki/Cytochrome_c_oxidase_subunit_I"><em>Citocromo C Oxidase I</em></a>, um gene que codifica uma das proteínas da <em>Cadeia transportadora de elétrons</em> da <em>fosforilação oxidativa</em>, responsável pela respiração celular, na mitocôndria.</p>
+<blockquote class="blockquote">
+<p>Abra o <em>vi</em>, para editar um arquivo de nome <strong>COI.fasta</strong>. Entre no <em>modo de inserção</em>.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vi</span> mtCOI.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Cole o conteúdo a seguir dentro do seu arquivo no editor de textos <em>vi</em>. Depois salve o conteúdo e saia.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>NC_012920.1:5904-7445 <span class="ex">Homo</span> sapiens mitochondrion, complete genome</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ATGTTCGCCGACCGTTGACTATTCTCTACAAACCACAAAGACATTGGAACACTATACCTATTATTCGGCG</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">CATGAGCTGGAGTCCTAGGCACAGCTCTAAGCCTCCTTATTCGAGCCGAGCTGGGCCAGCCAGGCAACCT</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">TCTAGGTAACGACCACATCTACAACGTTATCGTCACAGCCCATGCATTTGTAATAATCTTCTTCATAGTA</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">ATACCCATCATAATCGGAGGCTTTGGCAACTGACTAGTTCCCCTAATAATCGGTGCCCCCGATATGGCGT</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">TTCCCCGCATAAACAACATAAGCTTCTGACTCTTACCTCCCTCTCTCCTACTCCTGCTCGCATCTGCTAT</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ex">AGTGGAGGCCGGAGCAGGAACAGGTTGAACAGTCTACCCTCCCTTAGCAGGGAACTACTCCCACCCTGGA</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">GCCTCCGTAGACCTAACCATCTTCTCCTTACACCTAGCAGGTGTCTCCTCTATCTTAGGGGCCATCAATT</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ex">TCATCACAACAATTATCAATATAAAACCCCCTGCCATAACCCAATACCAAACGCCCCTCTTCGTCTGATC</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ex">CGTCCTAATCACAGCAGTCCTACTTCTCCTATCTCTCCCAGTCCTAGCTGCTGGCATCACTATACTACTA</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ex">ACAGACCGCAACCTCAACACCACCTTCTTCGACCCCGCCGGAGGAGGAGACCCCATTCTATACCAACACC</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="ex">TATTCTGATTTTTCGGTCACCCTGAAGTTTATATTCTTATCCTACCAGGCTTCGGAATAATCTCCCATAT</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="ex">TGTAACTTACTACTCCGGAAAAAAAGAACCATTTGGATACATAGGTATGGTCTGAGCTATGATATCAATT</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="ex">GGCTTCCTAGGGTTTATCGTGTGAGCACACCATATATTTACAGTAGGAATAGACGTAGACACACGAGCAT</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="ex">ATTTCACCTCCGCTACCATAATCATCGCTATCCCCACCGGCGTCAAAGTATTTAGCTGACTCGCCACACT</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="ex">CCACGGAAGCAATATGAAATGATCTGCTGCAGTGCTCTGAGCCCTAGGATTCATCTTTCTTTTCACCGTA</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="ex">GGTGGCCTGACTGGCATTGTATTAGCAAACTCATCACTAGACATCGTACTACACGACACGTACTACGTTG</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="ex">TAGCCCACTTCCACTATGTCCTATCAATAGGAGCTGTATTTGCCATCATAGGAGGCTTCATTCACTGATT</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ex">TCCCCTATTCTCAGGCTACACCCTAGACCAAACCTACGCCAAAATCCATTTCACTATCATATTCATCGGC</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ex">GTAAATCTAACTTTCTTCCCACAACACTTTCTCGGCCTATCCGGAATGCCCCGACGTTACTCGGACTACC</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="ex">CCGATGCATACACCACATGAAACATCCTATCATCTGTAGGCTCATTCATTTCTCTAACAGCAGTAATATT</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="ex">AATAATTTTCATGATTTGAGAAGCCTTCGCTTCGAAGCGAAAAGTCCTAATAGTAGAAGAACCCTCCATA</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ex">AACCTGGAGTGACTATATGGATGCCCCCCACCCTACCACACATTCGAAGAACCCGTATACATAAAATCTA</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ex">GA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Verifique o conteúdo do arquivo que você criou:</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> mtCOI.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Agora, vamos traduzir essa proteína utilizando a função recém-instalada, <em>transeq</em>.</p>
+<blockquote class="blockquote">
+<p>Traduza a sequência do arquivo mtCOI.fasta para o arquivo mtCOI.pep.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">transeq</span> mtCOI.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Observe que o programa te perguntou, interativamente, qual nome ele deveria dar ao arquivo de <em>output</em>. Isto poderia ser evitado caso você fornecesse o nome desse arquivo como argumento <em>-outseq $nome-do-arquivo-de-saída</em>.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Agora, vamos ver o conteúdo do arquivo gerado.</p>
+<blockquote class="blockquote">
+<p>Liste os arquivos e visualize o contaúdo do arquivo gerado pelo <em>transeq</em>.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> mtCOI.pep</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>Atenção!</strong> Observe que há algo de estranho na sequência gerada. Note que o símbolo <em><strong>*</strong> aparece algumas vezes em meio à sequência de letras que representa os amino ácidos. Esse símbolo, em <em>arquivos fasta de amino ácidos</em> representa </em><strong>códons de parada</strong>*, os códons que dizem para o ribossomo que a tradução daquela proteína terminou.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Mas, sendo o COI uma proteína única e sem íntrons, estes <strong><em>códons de parada</em></strong> não deveriam estar presentes no meio de sua sequência. Para tentarmos entender melhor, vamos usar um recurso externo.</p>
+</section>
+<section id="trabalhando-na-internet" class="level4">
+<h4 class="anchored" data-anchor-id="trabalhando-na-internet">Trabalhando na internet</h4>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Muitos programas de bioinformática, especialmente os mais utilizados, apresentam versões <em>online</em>, e são hospedados em <em>sites</em> onde qualquer pessoa pode ter acesso aos seus recursos. Em última análise, esses programas estão realizando as mesmas operações que quando são rodados no seu próprio computador, mas nesse caso o seu processamento é feito por sevidores remotos (em outro local).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Para a <em>tradução de arquivos de sequências biológicas</em>, um serviço online muito bom e muito utilizado é o <a href="https://web.expasy.org/translate/"><em>Expasy translate tool</em></a>, mantido pelo <strong>SBI</strong> (<em>Swiss Institute of Bioinformatics</em>). Vamos realizar a tradução da nossa sequência utilizando esse serviço.</p>
+<blockquote class="blockquote">
+<p>Acesse o site da ferramenta <a href="https://web.expasy.org/translate/">Expasy translate tool</a>.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Cole a sequência do arquivo mtCOI.fasta na caixa de texto para tradução, com ou sem o cabeçalho (&gt;).</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Acione o botão <strong><em>Translate</em></strong>, utilizando os parâmetros <em>default</em>.</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Veja que obtivemos um resultado semelhante, porém mais completo. Agora, temos 6 possibilidades de tradução, que correspondem a 3 fases de leitura (<em>ORFs</em> - <a href="https://pt.wikipedia.org/wiki/Fase_de_leitura_aberta"><em>Open Reading Frames</em></a>) para cada uma das duas fitas, a <em>fita codificadora</em> e a <em>fita complementar</em>.</p>
+<p><img src="../../home/heron/prjcts/bioinfo/misc/ORFs.png" class="img-fluid" alt="ORFs - Open Reading Frames">](https://en.wikipedia.org/wiki/Open_reading_frame)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Isso acontece porquê o local de início da tradução pelo ribossomo não é exato, mas sim definido pela própria composição da sequência, em funções de sinais como o primeiro <em>códon de iniciação</em>, que também corresponde à incorporação do amino ácido <strong>metionina</strong> (representado por <em>M</em>, ou <em>Met</em>). Ou seja, todas as protéinas tem sua síntese iniciada por uma <strong>metionina</strong> (em eucariotos e <em>archea</em>; e por fenil-metionina (<em>fMet</em>) em bactérias, mitocôndrias e plastídeos).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Agora, vamos entender os nossos resultados. Na página gerada pelo <em>Expasy translate tool</em>, observe que há um campo <strong>Genetic code</strong> que está definido como <em>Standard</em>. Veja as outras opções disponíveis. Vamos avaliar outras possivilidades. Lembre-se que: <em>o gene COI é um gene mitocondrial</em>.</p>
+<blockquote class="blockquote">
+<p>Altere o <strong>Genetic code</strong> de <em>Standard</em> para <em>Vertebrate mitochondrial</em>. Acione o botão <strong><em>Translate</em></strong> novamente.</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Veja que agora temos um resultado mais pertinente com a realidade! O primeiro resultado (correspondente à <em>fita codificadora</em> em sua <em>primeira fase de leitura</em>) apresenta uma proteína completa, iniciada por uma metionina, e finalizada por um códon de parada!</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Ou seja, o nosso resultado estava errado pois estávamos utilizando o <em>código genético</em> (o <em>dicionário</em>) errado! Os nossos ribossomos e os ribossomos de nossas mitocôndrias utilizam códigos ligeiramente diferentes.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Este é um exemplo de que, quando um <em>script</em>/programa/código funciona, não significa que ele gerou um resultado correto, biológicamente pertininete. A expertise do bioinformata esta justamente em compreender o que o o computador executou, avaliar se o resultado faz sentido e, caso não, entender o que precisa ser modificado para o funcionamento adequado.</p>
 </section>
 </section>
-<section id="including-plots" class="level2">
-<h2 class="anchored" data-anchor-id="including-plots">Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span><span class="er">(</span><span class="ex">pressure</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+</section>
+<section id="exercícios" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios">Exercícios</h2>
+<blockquote class="blockquote">
+<p>Utilizando a ferramenta <em>transeq</em>, refaça a tradução da sequência do arquivo mtCOI.fasta. Lembre-se de explorar as possibilidades de configuração com o argumento <em>–help</em>.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Visualize o arquivo gerado e confira se o resultado esperado foi obtido.</p>
+</blockquote>
+<hr>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Voltar para a <a href="https://heronoh.github.io/bioinfo"><em>página inicial</em></a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
