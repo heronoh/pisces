@@ -1,24 +1,29 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - misc/**
+    - data/**
+    - site_media/**   # garante que o logo entre no build
+
+lang: pt-BR
+date: last-modified
+
+website:
+  title: "Pisces consultoria ambiental"
+  site-url: https://heronoh.github.io/pisces/
+  search: true
+  navbar:
+    logo: site_media/PISCES_logo.png
+    # opcional: brand e links
+    # left:
+    #   - text: Início
+    #     href: index.qmd
+
 format:
   html:
     theme: solar
     toc: true
     toc-location: left
-editor: visual
 
-website:
-  title: "PISCES"
-  navbar:
-    left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Contextualization"
-        href: contextualization.qmd
-      - text: "Portfolio"
-        href: portfolio.qmd
-      - text: "Team"
-        href: team.qmd
-      - text: "Aulas"
-        href: aulas.qmd
+editor: visual

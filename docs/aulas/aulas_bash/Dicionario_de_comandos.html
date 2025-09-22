@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Prof.&nbsp;Heron OH">
+<meta name="dcterms.date" content="2023-01-01">
 
-<title>PISCES - Consultoria ambiental – Pisces consultoria ambiental</title>
+<title>Dicionário de comandos em bash – PISCES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -53,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Nenhum resultado",
-    "search-matching-documents-text": "documentos correspondentes",
-    "search-copy-link-title": "Copiar link para a busca",
-    "search-hide-matches-text": "Esconder correspondências adicionais",
-    "search-more-match-text": "mais correspondência neste documento",
-    "search-more-matches-text": "mais correspondências neste documento",
-    "search-clear-button-title": "Limpar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Procurar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -77,28 +79,55 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./site_media/PISCES_logo.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Pisces consultoria ambiental</span>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">PISCES</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-end">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contextualization.html"> 
+<span class="menu-text">Contextualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio.html"> 
+<span class="menu-text">Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../team.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../aulas.html"> 
+<span class="menu-text">Aulas</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-          <div id="quarto-search" class="" title="Procurar"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Nesta página</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#soluções-de-biomonitoramento" id="toc-soluções-de-biomonitoramento" class="nav-link active" data-scroll-target="#soluções-de-biomonitoramento">Soluções de Biomonitoramento</a></li>
+  <li><a href="#práticas-em-bioinfo" id="toc-práticas-em-bioinfo" class="nav-link active" data-scroll-target="#práticas-em-bioinfo">Práticas em Bioinfo</a>
+  <ul class="collapse">
+  <li><a href="#dicionário-de-comandos-em-bash" id="toc-dicionário-de-comandos-em-bash" class="nav-link" data-scroll-target="#dicionário-de-comandos-em-bash">Dicionário de comandos em <em>bash</em></a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -107,22 +136,28 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PISCES - Consultoria ambiental</h1>
+<h1 class="title">Dicionário de comandos em <em>bash</em></h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Heron OH </p>
+          </div>
+  </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22 de setembro de 2025</p>
+      <p class="date">January 1, 2023</p>
     </div>
   </div>
   
@@ -134,13 +169,173 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<hr>
-<section id="soluções-de-biomonitoramento" class="level1">
-<h1>Soluções de Biomonitoramento</h1>
-<p>Olá! Tudo bem? Welcome to PISCES, where we specialize in biomonitoring vertebrate and invertebrate communities in impacted ecosystems. Our solutions use cutting-edge eDNA metabarcoding technology to assess and monitor biodiversity with precision and efficiency.</p>
-<p>Navigate through our website to learn more about our services, view our portfolio of past projects, and meet our dedicated team of experts.</p>
+<style type="text/css" scoped="">
+PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
+</style>
+<style>
+body {
+text-align: justify}
+</style>
+<style>
+#toc ul.nav li ul li {
+    display: none;
+    max-height: none;
+}
+
+#toc ul.nav li.active ul li  {
+    display: block;
+    max-height: none;
+}
+
+#toc ul.nav li ul li ul li {
+    max-height: none;
+    display: none !important;
+}
+
+#toc ul.nav li ul li.active ul li {
+    max-height: none;
+    display: block !important;
+}
+</style>
+<section id="práticas-em-bioinfo" class="level1">
+<h1>Práticas em Bioinfo</h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Olá, esta é mais uma de um conjunto de práticas em bioinformática desenvolvidas para o curso de Biomedicina da PUC MG. Você pode encontrar as demais práticas <a href="https://heronoh.github.io/bioinfo"><em>aqui</em></a>.</p>
+<section id="dicionário-de-comandos-em-bash" class="level2">
+<h2 class="anchored" data-anchor-id="dicionário-de-comandos-em-bash">Dicionário de comandos em <em>bash</em></h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Comando</th>
+<th style="text-align: left;">Ação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>ls</em></strong></td>
+<td style="text-align: left;">lista o conteúdo do diretório atual</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>cd</em></strong></td>
+<td style="text-align: left;">muda o diretório atual</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>pwd</em></strong></td>
+<td style="text-align: left;">exibe o caminho completo do diretório atual</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>mkdir</em></strong></td>
+<td style="text-align: left;">cria um novo diretório</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>rm</em></strong></td>
+<td style="text-align: left;">remove um arquivo ou diretório</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>cp</em></strong></td>
+<td style="text-align: left;">copia um arquivo ou diretório</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>mv</em></strong></td>
+<td style="text-align: left;">move ou renomeia um arquivo ou diretório</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>cat</em></strong></td>
+<td style="text-align: left;">exibe o conteúdo de um arquivo</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>less</em></strong></td>
+<td style="text-align: left;">exibe o conteúdo de um arquivo de forma interativa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>grep</em></strong></td>
+<td style="text-align: left;">procura por um padrão em um arquivo ou em uma saída de comando</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>passwd</em></strong></td>
+<td style="text-align: left;">muda seu <em>password</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>top</em></strong></td>
+<td style="text-align: left;">exibe as informações de uso do sistema em tempo real</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>htop</em></strong></td>
+<td style="text-align: left;">exibe as informações de uso do sistema em tempo real, com mais opções</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>ps</em></strong></td>
+<td style="text-align: left;">lista os processos em execução no sistema</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>kill</em></strong></td>
+<td style="text-align: left;">encerra um processo em execução</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>chmod</em></strong></td>
+<td style="text-align: left;">altera as permissões de acesso a um arquivo ou diretório</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>chown</em></strong></td>
+<td style="text-align: left;">altera o proprietário de um arquivo ou diretório</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>ssh</em></strong></td>
+<td style="text-align: left;">estabelece uma conexão segura com outro computador</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>tar</em></strong></td>
+<td style="text-align: left;">cria ou extrai arquivos compactados em formato tar</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>wget</em></strong></td>
+<td style="text-align: left;">baixa arquivos da internet</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>curl</em></strong></td>
+<td style="text-align: left;">transfere dados de ou para um servidor utilizando diversos protocolos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>sudo</em></strong></td>
+<td style="text-align: left;">executa um comando com privilégios de superusuário (root)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>apt</em></strong></td>
+<td style="text-align: left;">gerenciador de pacotes do sistema Debian e derivados, utilizado para instalar, atualizar e remover pacotes de software</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>df</em></strong></td>
+<td style="text-align: left;">exibe informações sobre o espaço em disco utilizado e livre em cada partição do sistema</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>du</em></strong></td>
+<td style="text-align: left;">exibe o espaço em disco utilizado por cada arquivo e diretório no sistema</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><em>ping</em></strong></td>
+<td style="text-align: left;">testa a conectividade com outro computador ou dispositivo na rede</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>rsync</em></strong></td>
+<td style="text-align: left;">sincroniza o conteúdo de diretórios e arquivos entre dois computadores ou dispositivos na rede</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Voltar para a <a href="https://heronoh.github.io/bioinfo"><em>página inicial</em></a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -187,12 +382,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiada");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiada");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -236,7 +431,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/heronoh\.github\.io\/pisces\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
