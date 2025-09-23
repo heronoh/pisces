@@ -8,13 +8,17 @@ project:
 
 lang: pt-BR
 date: last-modified
-
 website:
   title: "Pisces consultoria ambiental"
   site-url: https://heronoh.github.io/pisces/
   search: true
   navbar:
     logo: site_media/PISCES_logo.png
+    left:
+    - text: "Equipe"
+      href: team.qmd
+    - text: "Portfólio"
+      href: portfolio.qmd
     # opcional: brand e links
     # left:
     #   - text: Início

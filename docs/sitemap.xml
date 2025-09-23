@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://heronoh.github.io/pisces/index.html</loc>
-    <lastmod>2025-09-22T21:54:17.175Z</lastmod>
+    <lastmod>2025-09-23T16:24:44.887Z</lastmod>
   </url>
   <url>
     <loc>https://heronoh.github.io/pisces/team.html</loc>
     <lastmod>2025-09-22T21:32:20.829Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heronoh.github.io/pisces/portfolio.html</loc>
+    <lastmod>2024-08-13T18:51:37.262Z</lastmod>
   </url>
 </urlset>

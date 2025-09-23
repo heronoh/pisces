@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-grid .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-grid'] = new List('listing-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -84,9 +144,24 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Pisces consultoria ambiental</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-end">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Equipe</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html"> 
+<span class="menu-text">Portfólio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-          <div id="quarto-search" class="" title="Procurar"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -98,7 +173,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#soluções-de-biomonitoramento" id="toc-soluções-de-biomonitoramento" class="nav-link active" data-scroll-target="#soluções-de-biomonitoramento">Soluções de Biomonitoramento</a></li>
+  <li><a href="#soluções-de-biomonitoramento" id="toc-soluções-de-biomonitoramento" class="nav-link active" data-scroll-target="#soluções-de-biomonitoramento">Soluções de Biomonitoramento</a>
+  <ul class="collapse">
+  <li><a href="#quem-sou" id="toc-quem-sou" class="nav-link" data-scroll-target="#quem-sou">Quem sou</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -122,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22 de setembro de 2025</p>
+      <p class="date">23 de setembro de 2025</p>
     </div>
   </div>
   
@@ -137,13 +215,54 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="soluções-de-biomonitoramento" class="level1">
 <h1>Soluções de Biomonitoramento</h1>
+<section id="quem-sou" class="level2">
+<h2 class="anchored" data-anchor-id="quem-sou">Quem sou</h2>
+<div class="columns">
+<div class="column">
+<p>A PISCES é uma empresa com história formada por profissionais abaritados em mato ar e água.</p>
+</div>
+</div>
+<div class="column">
+<p><img src="../site_media/PISCES_logo.png" class="mt-4 img-fluid" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;" alt="Logo da PISCES"></p>
+</div>
+<p>:::</p>
+<hr>
 <p>Olá! Tudo bem? Welcome to PISCES, where we specialize in biomonitoring vertebrate and invertebrate communities in impacted ecosystems. Our solutions use cutting-edge eDNA metabarcoding technology to assess and monitor biodiversity with precision and efficiency.</p>
 <p>Navigate through our website to learn more about our services, view our portfolio of past projects, and meet our dedicated team of experts.</p>
 
 
+
+</section>
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-grid">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filtro">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1758576740000" data-listing-file-modified-sort="1758576740829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<a href="./team.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Team
+</h5>
+<div class="card-text listing-description">
+<strong>Bioinformática e análise de dados</strong><br>
+Biólogo e bioinformáta, tem ampla experiência na aplicação de técnicas DNA ambiental no monitoramento da biodiversidade.
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+Sem itens correspondentes
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
