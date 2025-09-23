@@ -21,12 +21,12 @@ listing:
 # Soluções de Biomonitoramento
 
 
-## Quem sou
+## A empresa
 
 ::: columns
 ::: column
 
-A PISCES é uma empresa com história formada por profissionais abaritados em mato ar e água. 
+A PISCES é uma empresa com história formada por profissionais gabaritados em mato ar e água. 
 
 :::
 
@@ -34,7 +34,7 @@ A PISCES é uma empresa com história formada por profissionais abaritados em ma
 
 ::: column
 
-![](../site_media/PISCES_logo.png){.mt-4 alt="Logo da PISCES" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
+![](site_media/PISCES_logo.png){.mt-4 alt="Logo da PISCES" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
 
 :::
 :::
