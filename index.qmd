@@ -21,16 +21,15 @@ listing:
 # Soluções de Biomonitoramento
 
 
-## A empresa
-
 ::: columns
 ::: column
+
+
+## A empresa
 
 A PISCES é uma empresa com história formada por profissionais gabaritados em mato ar e água. 
 
 :::
-
-::: 
 
 ::: column
 

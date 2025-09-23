@@ -1,27 +1,49 @@
 
 
-# Team
+# Time PISCES
 
 ## Nosso time
 
-![](site_media/HeronOH_3x4_2024.jpg){fig-alt="Heron Hilário 3x4" fig-align="left" width="100"}
 
+::: columns
+::: column
+
+![](site_media/HeronOH_3x4_2024.jpg){.mt-4 alt="Foto de perfil de Heron O. Hilário" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
+:::
+:::column
 ### Heron Oliveira Hilário, PhD
 
 **Bioinformática e análise de dados**\
 Biólogo e bioinformáta, tem ampla experiência na aplicação de técnicas DNA ambiental no monitoramento da biodiversidade.
+:::
+:::
 
 
-![](site_media/GilbertoNS_3x4_2025.jpg){fig-alt="Gilberto Salvador 3x4" fig-align="left" width="100"}
 
+
+::: columns
+::: column
+
+![](site_media/GilbertoNS_3x4_2025.jpg){.mt-4 alt="Foto de perfil de Gilberto Nepomuceno Salvador" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
+:::
+:::column
 ### Gilberto Nepomuceno Salvador, PhD
 
 **Ictiólogo e gente fina**\
 Oi eu sou legal e gosto de peixes!
+:::
+:::
 
-![](site_media/JoaoPG_3x4_2025.jpg){fig-alt="Gilberto Salvador 3x4" fig-align="left" width="100"}
 
+
+::: columns
+::: column
+![](site_media/JoaoPG_3x4_2025.jpg){.mt-4 alt="Foto de perfil de João Pedro Gomes" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
+:::
+:::column
 ### João Pedro Gomes, PhD
 
 **Ictiólogo e guerreiro**\
 Se você não gosta de peixes eu vou te dar um ypon!
+:::
+:::

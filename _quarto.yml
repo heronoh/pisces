@@ -11,6 +11,7 @@ date: last-modified
 website:
   title: "Pisces consultoria ambiental"
   site-url: https://heronoh.github.io/pisces/
+  image: site_media/PISCES_logo.png
   search: true
   navbar:
     logo: site_media/PISCES_logo.png
