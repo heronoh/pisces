@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://heronoh.github.io/pisces/contextualization.html</loc>
+    <lastmod>2024-08-13T18:53:32.921Z</lastmod>
+  </url>
+  <url>
     <loc>https://heronoh.github.io/pisces/index.html</loc>
     <lastmod>2025-09-23T21:34:37.928Z</lastmod>
   </url>
   <url>
-    <loc>https://heronoh.github.io/pisces/team.html</loc>
-    <lastmod>2025-10-18T15:04:27.129Z</lastmod>
-  </url>
-  <url>
     <loc>https://heronoh.github.io/pisces/portfolio.html</loc>
     <lastmod>2024-08-13T18:51:37.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heronoh.github.io/pisces/team.html</loc>
+    <lastmod>2025-10-18T15:04:27.129Z</lastmod>
   </url>
 </urlset>
