@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 
 
 # Time PISCES
@@ -5,45 +10,99 @@
 ## Nosso time
 
 
+```{r}
+#| label: team_display
+#| eval: true
+#| out-width: 100%
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+#| include: true
+
+
+# carregar bibliotecas
+suppressPackageStartupMessages({
+  library(readr); library(dplyr); library(tibble); library(glue); library(stringr)
+})
+
+# Caminhos ----
+csv_path <- "site_media/Pisces--infos_site.csv"   # ajuste se necessário
+img_base <- "site_media"                           # pasta onde estão as fotos
+
+# Leitura da tabela ----
+team_tbl <- read_csv(csv_path, show_col_types = FALSE) %>%
+  tibble() %>%
+  select(-starts_with("REMOV"), everything())
+
+# Helper: vazio/NA -> ""
+nz <- function(x) ifelse(is.na(x) | trimws(x) == "", "", x)
+
+# Loop por membro ----
+for (i in seq_len(nrow(team_tbl))) {
+  
+  row <- team_tbl[i, ]
+
+  # Campos principais
+  nome   <- nz(row$Nome)
+  titulo <- nz(row$`Título`)
+  bio    <- nz(row$`Texto de apresentação`)
+  lattes <- nz(row$Lattes)
+  orcid  <- nz(row$Orcid)
+  schol  <- nz(row$Scholar)
+
+  # Foto: compõe caminho completo (se "Arquivo.foto" já tiver caminho, mantém)
+  foto_file <- nz(row$`Arquivo foto`)
+  foto_path <- if (foto_file == "" || str_detect(foto_file, "^(https?://|/)")) 
+                 foto_file else file.path(img_base, foto_file)
+
+  # Markdown da imagem (se houver)
+  img_md <- if (foto_path != "") {
+  glue('<img src="{foto_path}" alt="Foto de perfil de {nome}"
+        style="max-width:110px; width:100%;
+               aspect-ratio:1/1; height:auto;
+               border-radius:50%; object-fit:cover;
+               display:block; margin-left:auto; margin-right:auto;">')
+} else {
+  ""
+}
+
+  # Linha de links (só entra o que existir)
+  links <- c(
+    if (lattes != "") glue('[Lattes]({lattes})') else NULL,
+    if (orcid  != "") glue('[ORCID]({orcid})') else NULL,
+    if (schol  != "") glue('[Scholar]({schol})') else NULL
+  )
+  links_md <- if (length(links)) paste(links, collapse = " • ") else ""
+
+ 
+   # Título ao lado do nome (ex.: ", PhD"), apenas se houver
+  nome_titulo <- if (titulo != "") glue("{nome}, {titulo}") else nome
+
+
+    # Bloco columns em Markdown (impresso como 'asis' para o HTML do Quarto)
+  cat(glue('
 ::: columns
-::: column
+::: {{.column width="22%"}}
 
-![](site_media/HeronOH_3x4_2024.jpg){.mt-4 alt="Foto de perfil de Heron O. Hilário" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
+
+
+{img_md}
 :::
-:::column
-### Heron Oliveira Hilário, PhD
+::: {{.column width="78%"}}
+### {nome_titulo}
 
-**Bioinformática e análise de dados**\
-Biólogo e bioinformáta, tem ampla experiência na aplicação de técnicas DNA ambiental no monitoramento da biodiversidade.
-:::
-:::
+<div style="text-align:justify; text-justify:inter-word; hyphens:auto;">
+{bio}
+</div>
 
-
-
-
-::: columns
-::: column
-
-![](site_media/GilbertoNS_3x4_2025.jpg){.mt-4 alt="Foto de perfil de Gilberto Nepomuceno Salvador" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
-:::
-:::column
-### Gilberto Nepomuceno Salvador, PhD
-
-**Ictiólogo e gente fina**\
-Oi eu sou legal e gosto de peixes!
+{if (links_md != "") glue("**{links_md}**  \\\\ ") else ""}
 :::
 :::
 
+'))
+}
 
 
-::: columns
-::: column
-![](site_media/JoaoPG_3x4_2025.jpg){.mt-4 alt="Foto de perfil de João Pedro Gomes" style="width:220px;height:220px;border-radius:50%;object-fit:cover;display:block;margin-left:auto;margin-right:auto;"}
-:::
-:::column
-### João Pedro Gomes, PhD
+```
 
-**Ictiólogo e guerreiro**\
-Se você não gosta de peixes eu vou te dar um ypon!
-:::
-:::
